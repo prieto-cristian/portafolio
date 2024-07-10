@@ -1,0 +1,72 @@
+:root{
+    --color-primario: #7D0A0A;
+    --color-secundario: #BF3131;
+    --color-terciario: #EAD196;
+    --color-cuaternario: #F3EDC8;
+    --fuente-texto: system-ui, sans-serif;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-cuaternario);
+    font-family: var(--fuente-texto);
+}
+
+/* Estilos del header */
+.header{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    height: 80px;
+    box-shadow: 0px 0.5px 0.5px var(--color-terciario);
+}
+.header__nombre-logo{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px black;
+    color: var(--color-cuaternario);
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.header__nombre-logo:hover{
+    font-size: 32px;
+}
+
+.titulo-destacado{
+    color: var(--color-terciario);
+}
+.header__menu{
+    height: 100%;
+}
+.header__menu ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__menu__item{
+    list-style: none;
+    height: 100%;
+    transition: all 300ms;
+}
+.header__menu__enlace{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-cuaternario);
+    font-size: 18px;
+    padding: 0px 20px;
+    height: 100%;
+    transition: all 400ms;
+}
+
+.header__menu__item:hover{
+    background-color: var(--color-primario);
+}
+.header__menu__item:hover .header__menu__enlace{
+    font-size: 20px;
+}
