@@ -1,45 +1,194 @@
 <!DOCTYPE html>
-<html lang="es-ar">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
-    <title>Portafolio</title>
 </head>
+
 <body>
-    <header class="header">
-        <a class="header__nombre-logo" href="#">Cristian <strong class="titulo-destacado">Prieto</strong></a>
-        <nav class="header__menu">
-            <ul>
-                <li class="header__menu__item"><a class="header__menu__enlace" href="index.html">Inicio</a></li>
-                <li class="header__menu__item"><a class="header__menu__enlace" href="#">Sobre mi</a></li>
-                <li class="header__menu__item"><a class="header__menu__enlace" href="#">Proyectos</a></li>
-                <li class="header__menu__item"><a class="header__menu__enlace" href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="presentacion">
-        <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo">Optimiza tu presencia digital <strong class="titulo-destacado">con un Front-end de calidad!</strong></h1>
-            <p class="presentacion__contenido__texto">¡Hola! Soy Cristian Prieto, desarrollador Front-end con especialización en HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a cabo buenas ideas. ¿Hablamos?</p>
-            <section class="presentacion__enlaces">
-                <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes:</h2>
-                <a class="presentacion__enlaces__link" href="#">
-                    <i class="fa-brands fa-github"></i>
-                    GitHub
-                </a>
-                <a class="presentacion__enlaces__link" href="#">
-                    <i class="fa-brands fa-linkedin"></i>
-                    Linkedin
-                </a>
-            </section>    
+    <div class="vh-100 container-fluid p-0 d-flex flex-column">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Prieto Cristian</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link" href="#aptitudes">Aptitudes</a>
+                            <a class="nav-link" href="#cursos">Cursos Realizados</a>
+                            <a class="nav-link" href="#educacion">Educación</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container m-auto">
+            <div class="row align-items-lg-center">
+                <div class="m-auto col-10 col-md-6 col-lg-5">
+                    <img class="rounded-circle imagenLogo w-100" src="./assets/foto-perfil.webp" alt="foto de perfil">
+                </div>
+                <div class="col-md-6 mt-3 col-lg-7">
+                    <h1 class="text-center">Desarrollador <span class="badge rounded-0 fs-1">Backend .NET</span></h1>
+                    <p class="fs-5"><span class="d-none d-md-block">¡Hola! Soy Cristian Prieto, desarrollador
+                            Backend con especialización en .NET.</span> <span class="fw-bold">Ayudo a pequeños
+                            negocios y diseñadores a llevar a cabo buenas ideas.</span>¿Hablamos?</p>
+                    <div class="d-flex gap-4 justify-content-center mt-2">
+                        <a class="btn col-5 d-flex align-items-center justify-content-center gap-3"
+                            href="https://github.com/prieto-cristian" target="_blank">GitHub
+                            <img width="30px" src="./assets/logo-github.png" alt="logo github"></a>
+                        <a class="btn col-5 d-flex align-items-center justify-content-center gap-3"
+                            href="https://www.linkedin.com/in/prieto-cristian/" target="_blank">Linkedin
+                            <img width="30px" src="./assets/logo-linkedin.png" alt="logo linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container">
+        <section class="proyectos-realizados d-flex flex-column align-items-center">
+            <h2 class="mt-5 mb-5 d-inline-block align-self-start" id="proyectos">Proyectos Realizados</h2>
+
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="./assets/gestor-de-articulos.png" class="img-fluid imagenProyecto rounded h-100"
+                            alt="foto del proyecto gestor de artículos">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card-header d-flex justify-content-evenly flex-wrap">
+                            <p class="badge text-bg-danger text-wrap d-flex align-items-center gap-2"><img width="25px"
+                                    src="./assets/logo-sql-server.png" alt="logo sql server">SQL Server</p>
+                            <p class="badge text-bg-danger text-wrap d-flex align-items-center gap-2"><img width="25px"
+                                    src="./assets/logo-visual-studio.png" alt="logo visual studio">Visual Studio 2022
+                            </p>
+                            <p class="badge text-bg-danger text-wrap d-flex align-items-center gap-2">WinForms</p>
+                            <p class="badge text-bg-danger text-wrap d-flex align-items-center gap-2"><img width="25px"
+                                    src="./assets/logo-sql.png" alt="logo sql">SQL</p>
+                            <p class="badge text-bg-danger text-wrap d-flex align-items-center gap-2"><img width="25px"
+                                    src="./assets/logo-net.png" alt="logo .NET Framework">.NET Framework</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-2">Gestor de Articulos</h5>
+                            <p class="card-text">Aplicación de escritorio que permite al usuario realizar operaciones
+                                CRUD (crear, leer, modificar y eliminar) sobre articulos, marcas y categorias. <span
+                                    class="d-none d-lg-block"> Ademas,
+                                    la
+                                    aplicacion cuenta con un filtro potente que permite al usuario filtrar articulos por
+                                    distintos
+                                    criterios (precios, categorias, marcas, nombre del producto). Excelente aplicacion
+                                    si
+                                    queres
+                                    empezar a administrar tu negocio.</span></p>
+                            <div class="d-flex flex-column gap-4 align-items-center flex-md-row justify-content-md-center">
+                                <a class="btn col-10 col-md-5 d-flex align-items-center justify-content-center gap-3"
+                                    target="_blank"
+                                    href="https://github.com/prieto-cristian/tp-final-2-gestor-de-articulos">Repositorio<img
+                                        width="30px;" src="./assets/logo-github.png" alt="logo github"></a>
+                                <a class="btn disabled col-10 col-md-5 d-flex align-items-center justify-content-center gap-3"
+                                    href="#">Más detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <img class="presentacion__imagen" src="assets/foto-perfil.webp" alt="Foto de perfil">
+
+        <section>
+            <h2 class="mt-5 mb-5 d-inline-block" id="aptitudes">Aptitudes</h2>
+            <ul class="list-group flex-row flex-wrap gap-4 justify-content-center">
+                <li
+                    class="col-5 col-md-3 col-lg-2 list-group-item border rounded-2 d-flex flex-column align-items-center border-info border-3">
+                    <img src="./assets/logo-sql-server.png" alt="logo sql server" width="90%">SQL Server
+                </li>
+                <li
+                    class="col-5 col-md-3 col-lg-2 list-group-item border rounded-2 d-flex flex-column align-items-center border-info border-3">
+                    <img src="./assets/logo-visual-studio.png" alt="logo visual studio" width="90%">Visual Studio
+                    2022
+                </li>
+                <li
+                    class="col-5 col-md-3 col-lg-2 list-group-item border rounded-2 d-flex flex-column align-items-center border-info border-3">
+                    <img src="./assets/logo-sql.png" alt="logo sql" width="90%">SQL
+                </li>
+                <li
+                    class="col-5 col-md-3 col-lg-2 list-group-item border rounded-2 d-flex flex-column align-items-center border-info border-3">
+                    <img src="./assets/logo-net.png" width="90%" alt="logo .NET Framework">.NET Framework
+                </li>
+            </ul>
+        </section>
+
+        <section class="cursos-finalizados d-flex flex-column align-items-center">
+            <h2 class="mt-5 mb-5 d-inline-block align-self-start" id="cursos">Cursos Realizados</h2>
+
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="./assets/certificado-nivel-2.webp" class="img-fluid rounded-end h-100"
+                            alt="portada del curso">
+                    </div>
+                    <div class="col-md-6 col-lg-7">
+                        <div class="card-header d-flex justify-content-evenly flex-wrap">
+                            07/2025
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Curso C# Nivel 2 [.Net + SQL]</h5>
+                            <h6>Temas vistos:</h6>
+                            <ul>
+                                <li>Programación Orientada a Objetos</li>
+                                <li>.NET Framework</li>
+                                <li>Conexión a base de datos mediante ADO.NET</li>
+                                <li>Creación de consultas SQL</li>
+                                <li>Manejo de SQL Server</li>
+                                <li>WinForms</li>
+                                <li>Excepciones y Validaciones</li>
+                                <li>Arquitectura en Capas</li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a class="btn d-flex align-items-center justify-content-center gap-3" target="_blank"
+                                    href="https://github.com/prieto-cristian/tp-final-2-gestor-de-articulos">Ver
+                                    Certificado<img width="30px;" src="./assets/logo-linkedin.png"
+                                        alt="logo linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="educacion">
+            <h2 class="mt-5 mb-5 d-inline-block" id="educacion">Educación</h2>
+
+            <ul class="list-group col-md-8">
+                <li class="list-group-item">Secundario Completo</li>
+            </ul>
+
+        </section>
     </main>
-    <footer class="footer">
-        <p>Desarrollado por Cristian Prieto</p>
+    <footer class="mt-5 d-flex justify-content-center align-items-center">
+        <a class="text-dark" href="#">Realizado por Cristian Prieto</a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

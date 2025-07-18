@@ -1,151 +1,81 @@
-:root{
-    --color-primario: #7D0A0A;
-    --color-secundario: #BF3131;
-    --color-terciario: #EAD196;
-    --color-cuaternario: #F3EDC8;
-    --fuente-texto: system-ui, sans-serif;
+:root {
+    --color-1: #f2ab80;
+    --color-2: #ecde5e;
+    --color-3: #300c08;
+    --color-4: #887671;
+    --color-5: #f3eae8;
 }
 
-body, html{
-    background-color: var(--color-primario);
-    color: var(--color-cuaternario);
-    font-family: var(--fuente-texto);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+body {
+    background-color: var(--color-5);
 }
 
-/* Estilos del header */
-.header{
-    background-color: var(--color-secundario);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15%;
-    height: 80px;
-    box-shadow: 0px 0.5px 0.5px var(--color-terciario);
-}
-.header__nombre-logo{
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 0px 1px 0px black;
-    color: var(--color-cuaternario);
-    text-decoration: none;
-    transition: all 200ms;
+h1 .badge {
+    background-color: var(--color-1);
 }
 
-.header__nombre-logo:hover{
-    font-size: 2.2rem;
-}
-
-.titulo-destacado{
-    color: var(--color-terciario);
-}
-.header__menu{
-    height: 100%;
-}
-.header__menu ul{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-.header__menu__item{
-    list-style: none;
-    height: 100%;
-    transition: all 300ms;
-}
-.header__menu__enlace{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--color-cuaternario);
-    font-size: 1.2rem;
-    padding: 0px 20px;
-    height: 100%;
-    transition: all 400ms;
-}
-
-.header__menu__item:hover{
-    background-color: var(--color-primario);
-}
-.header__menu__item:hover .header__menu__enlace{
-    font-size: 1.35rem;
-}
-
-/* Estilos del main */
-.presentacion{
-    margin: 0px auto;
-    padding: 6% 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.presentacion__contenido{
-    width: 47%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-.presentacion__contenido__titulo{
-    font-size: 2.8rem;
-    text-shadow: 0px 1px 3px black;
-}
-.presentacion__contenido__titulo .titulo-destacado{
-    background-color: #BF3131;
-}
-
-.presentacion__contenido__texto{
-    font-size: 1.6rem;
-}
-
-.presentacion__imagen{
-    width: 30%;
-    border-radius: 50%;
-    display: block;
-    background-color: var(--color-primario);
-    border: 1px solid var(--color-secundario);
-    box-shadow: 2px 2px 10px var(--color-secundario) , -2px -2px 10px var(--color-secundario) ;
-}
-
-.presentacion__enlaces{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
-    height: 250px;
-}
-.presentacion__enlaces__subtitulo{
-    font-size: 1.9rem;
-}
-.presentacion__enlaces__link{
-    color: var(--color-cuaternario);
-    font-size: 1.6rem;
-    text-decoration: none;
-    display: block;
-    border: 1px solid var(--color-cuaternario);
-    width: 40%;
-    padding: 2% 0px;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-    transition: all 200ms;
-    
-}
-.presentacion__enlaces__link:hover{
-    box-shadow: 2px 2px 10px black;
-    font-size: 1.7rem;
-}
-
-.footer{
-    background-color: var(--color-secundario);
-    font-size: 1.4rem;   
+.navbar {
+    background-color: var(--color-1);
+    box-shadow: 0px 2px 5px var(--color-3);
     height: 70px;
-    box-shadow: 0px -0.5px 0.5px var(--color-terciario);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+}
+.navbar-nav > a:hover{
+    border-bottom: 1px solid var(--color-3);
+}
+.container-fluid {
+    background-color: inherit;
+}
+
+.navbar a {
+    color: #000;
+}
+
+.imagenLogo {
+    box-shadow: -13px 12px 20px var(--color-4);
+    border: 4px solid var(--color-1);
+}
+
+.btn {
+    height: 60px;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-3);
+}
+
+.btn:hover {
+    background-color: var(--color-1);
+    border: 2px solid var(--color-3);
+    box-shadow: 5px 5px 4px var(--color-3);
+}
+
+/* Estilos de la seccion de proyectos realizados */
+h2 {
+    box-shadow: 0px 8px 0px var(--color-1);
+}
+
+.proyectos-realizados .card {
+    border: 1px solid var(--color-3);
+}
+
+.proyectos-realizados .card:hover {
+    box-shadow: 5px 5px 30px var(--color-4);
+}
+
+/* Estilos de los cursos realizados */
+.cursos-finalizados .card {
+    border: 1px solid var(--color-3);
+}
+
+/* Estilos del footer */
+footer {
+    height: 90px;
+    background-color: var(--color-1);
+    box-shadow: 0px -2px 5px var(--color-3);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline var(--color-3);
 }
